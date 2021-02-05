@@ -6,6 +6,7 @@ def febSequ(n):
         return 1
     else:
         return(febSequ(n-1) + febSequ(n-2))
-
-for i in range(10):
-    print(febSequ(i))
+n=int(input("Enter number of term: "))
+# This takes input as an string and convert into int as given input:
+for i in range(n):
+    print(febSequ(i), end='  ')
